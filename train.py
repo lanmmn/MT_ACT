@@ -11,7 +11,7 @@ from tqdm import tqdm
 from einops import rearrange
 import wandb
 from constants import  CAMERA_NAMES
-from utils import load_data 
+from utils import load_data, load_data_improved
 from utils import compute_dict_mean, set_seed, detach_dict
 from policy import ACTPolicy, CNNMLPPolicy
 import glob
@@ -31,7 +31,10 @@ def main(args):
     num_epochs = args['num_epochs']
 
    
-    num = ((len(glob.glob(dataset_dir[0] + "/*/*/")))*100)-3
+    # num = ((len(glob.glob(dataset_dir[0] + "/*/*/")))*100)-3
+    num = ((len(glob.glob(dataset_dir[0] + "/*/")))*100)-3
+
+    print(num)
     assert num > 100  ## sanity check for data folder
     # fixed parameters
     num_episodes = 6000 ## total trajectories for training
@@ -75,7 +78,8 @@ def main(args):
         'batch_size': args['batch_size']
     }
 
-    train_dataloader, val_dataloader, stats, is_sim = load_data(dataset_dir, num_episodes, batch_size_train, batch_size_val)
+    # train_dataloader, val_dataloader, stats, is_sim = load_data(dataset_dir, num_episodes, batch_size_train, batch_size_val)
+    train_dataloader, val_dataloader, stats, is_sim = load_data_improved(dataset_dir, num_episodes, batch_size_train, batch_size_val)
 
 
     policy_config['camera_names'] = CAMERA_NAMES
@@ -246,7 +250,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset_dir', nargs='+', help='dataset_dir', required=True)
     parser.add_argument('--ckpt_dir', action='store', type=str, help='ckpt_dir', required=True)
     parser.add_argument('--policy_class', action='store', type=str, help='policy_class, capitalize', required=True)
-    parser.add_argument('--task_name', action='store', type=str, help='task_name', required=True)
+    parser.add_argument('--task_name', action='store', type=str, help='task_name', required=False)
     parser.add_argument('--batch_size', action='store', type=int, help='batch_size', required=True)
     parser.add_argument('--seed', action='store', type=int, help='seed', required=True)
     parser.add_argument('--num_epochs', action='store', type=int, help='num_epochs', required=True)
