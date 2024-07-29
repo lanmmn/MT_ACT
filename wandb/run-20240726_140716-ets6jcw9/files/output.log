@@ -1,0 +1,40 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+> /home/lanzihan/workspace/Github/roboagent/train.py(165)forward_pass_improved()
+-> image_data = image_data.view(batch_size * seq_len, *image_data.shape[2:])
+  0%|                                                                                                                                                                                                 | 0/2000 [00:00<?, ?it/s]2024-07-26 14:07:25,041 - INFO - val dataloader is fetching data, the length is 5.
+160  	
+161  	    # 获取批次大小和序列长度
+162  	    batch_size, seq_len = action_data.shape[:2]
+163  	    pdb.set_trace()
+164  	    # 重塑数据以适应策略网络
+165  ->	    image_data = image_data.view(batch_size * seq_len, *image_data.shape[2:])
+166  	    qpos_data = qpos_data.view(batch_size * seq_len, -1)
+167  	
+168  	    return policy(qpos_data, image_data, action_data, is_pad,task_emb)
+169  	
+170  	def train_bc(train_dataloader, val_dataloader, config):
+torch.Size([8, 3, 3, 480, 640])
+torch.Size([8, 14])
+torch.Size([8, 300, 14])
+8
+300
+torch.Size([8, 384])
+  0%|                                                                                                                                                                                                 | 0/2000 [03:43<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 298, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 104, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 197, in train_bc
+    forward_dict = forward_pass_improved(data, policy)
+  File "train.py", line 165, in forward_pass_improved
+    image_data = image_data.view(batch_size * seq_len, *image_data.shape[2:])
+  File "train.py", line 165, in forward_pass_improved
+    image_data = image_data.view(batch_size * seq_len, *image_data.shape[2:])
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

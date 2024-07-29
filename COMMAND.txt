@@ -1,2 +1,28 @@
 train:
-python train.py --dataset_dir /data/Datasets/ --ckpt_dir /home/lanzihan/workspace/Github/roboagent/ckpt --policy_class ACT --kl_weight 10 --chunk_size 20 --hidden_dim 512 --batch_size 64 --dim_feedforward 3200 --seed 0 --temporal_agg --num_epochs 2000 --lr 1e-5 --multi_task  --run_name lanzihan
+
+论文原参数: 
+command: python train.py --dataset_dir /data/Datasets/ --ckpt_dir /home/lanzihan/workspace/Github/roboagent/ckpt --policy_class ACT --kl_weight 10 --chunk_size 20 --hidden_dim 512 --batch_size 64 --dim_feedforward 3200 --seed 0 --temporal_agg --num_epochs 3500 --lr 1e-5 --multi_task  --run_name lanzihan
+config:
+{ batch_size: 64,
+  lr: 1e-5,
+  lr_backbone: 1e-5 }
+** batch_size64 2080ti, load不了
+
+
+my own:
+python train.py --dataset_dir /data/Datasets/ --ckpt_dir /home/lanzihan/workspace/Github/roboagent/ckpt --policy_class ACT --kl_weight 10 --chunk_size 32 --hidden_dim 512 --batch_size 32 --dim_feedforward 3200 --seed 0 --temporal_agg --num_epochs 3000 --lr 2e-5 --multi_task  --run_name lanzihan-bs32-lr2-lrb1-cs32-numepi_100
+config:
+{ batch_size: 32,
+  lr: 2e-5,
+  lr_backbone: 1e-5,
+  num_episodes: 100,
+  chunk_size: 32 }
+
+2024.7.29 11:29
+python train.py --dataset_dir /data/Datasets/ --ckpt_dir /data/ckpt/mtact_bs32_lr2_lrbb1_epi200_cs32 --policy_class ACT --kl_weight 10 --chunk_size 32 --hidden_dim 512 --batch_size 32 --dim_feedforward 3200 --seed 0 --temporal_agg --num_epochs 3000 --lr 2e-5 --multi_task  --run_name lanzihan-bs32-lr2-lrb1-cs32-numepi_200
+config:
+{ batch_size: 32,
+  lr: 2e-5,
+  lr_backbone: 1e-5,
+  num_episodes: 200,
+  chunk_size: 32 }

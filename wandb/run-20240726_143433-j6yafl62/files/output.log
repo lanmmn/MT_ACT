@@ -1,0 +1,51 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+Val loss:   72.64552
+l1: 0.697 kl: 7.195 loss: 72.646
+  0%|                                                                                                                                                                                                 | 0/3500 [00:00<?, ?it/s]2024-07-26 14:34:39,814 - INFO - val dataloader is fetching data, the length is 5.
+  0%|                                                                                                                                                                                                 | 0/3500 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 301, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 107, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 219, in train_bc
+    forward_dict = forward_pass_improved(data, policy)
+  File "train.py", line 171, in forward_pass_improved
+    return policy(qpos_data, image_data, action_data, is_pad,task_emb)
+  File "/home/lanzihan/workspace/Github/roboagent/policy.py", line 29, in __call__
+    a_hat, is_pad_hat, (mu, logvar) = self.model(qpos, image, env_state, actions, is_pad,task_emb)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/detr_vae.py", line 161, in forward
+    hs = self.transformer(src, None, self.query_embed.weight, pos, latent_input, proprio_input, self.additional_pos_embed.weight,task_emb=task_emb)[0]
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/transformer.py", line 73, in forward
+    memory = self.encoder(src, src_key_padding_mask=mask, pos=pos_embed)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/transformer.py", line 94, in forward
+    output = layer(output, src_mask=mask,
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/transformer.py", line 201, in forward
+    return self.forward_post(src, src_mask, src_key_padding_mask, pos)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/transformer.py", line 176, in forward_post
+    src2 = self.linear2(self.dropout(self.activation(self.linear1(src))))
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 208.00 MiB. GPU

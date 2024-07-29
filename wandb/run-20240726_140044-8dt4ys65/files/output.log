@@ -1,0 +1,15 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+  0%|                                                                                                                                                                                                 | 0/2000 [00:00<?, ?it/s]2024-07-26 14:00:52,888 - INFO - val dataloader is fetching data, the length is 5.
+  0%|                                                                                                                                                                                                 | 0/2000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 281, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 104, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 180, in train_bc
+    forward_dict = forward_pass(data, policy)
+  File "train.py", line 148, in forward_pass
+    image_data, qpos_data, action_data, is_pad = image_data.cuda(), qpos_data.cuda(), action_data.cuda(), is_pad.cuda()
+AttributeError: 'str' object has no attribute 'cuda'

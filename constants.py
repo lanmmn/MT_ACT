@@ -1,5 +1,6 @@
 ### Robopen constants
-CAMERA_NAMES = ['rgb_left','rgb_top','rgb_right','rgb_wrist']
+FILE_COUNTS = 0
+CAMERA_NAMES = ['cam_high', 'cam_left_wrist', 'cam_right_wrist'],
 ## change this to train with less cameras
 
 

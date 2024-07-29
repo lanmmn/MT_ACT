@@ -15,6 +15,8 @@ from utils import load_data, load_data_improved
 from utils import compute_dict_mean, set_seed, detach_dict
 from policy import ACTPolicy, CNNMLPPolicy
 import glob
+from logger import logger
+import pdb
 
 def main(args):
     set_seed(1)
@@ -29,18 +31,24 @@ def main(args):
     batch_size_train = args['batch_size']
     batch_size_val = args['batch_size']
     num_epochs = args['num_epochs']
-
+    arm_delay_time = args['arm_delay_time']
+    use_depth_image = args['use_depth_image']
+    use_robot_base = args['use_robot_base']
    
     # num = ((len(glob.glob(dataset_dir[0] + "/*/*/")))*100)-3
     num = ((len(glob.glob(dataset_dir[0] + "/*/")))*100)-3
-
     print(num)
     assert num > 100  ## sanity check for data folder
+    
+    
     # fixed parameters
-    num_episodes = 6000 ## total trajectories for training
+    # num_episodes = 6000 ## total trajectories for training
+    num_episodes = 200
     state_dim = 14
     lr_backbone = 1e-5
     backbone = 'resnet18'
+    # means the author not change this params, like lr_backbone
+    
     if policy_class == 'ACT':
         enc_layers = 4
         dec_layers = 7
@@ -78,13 +86,15 @@ def main(args):
         'batch_size': args['batch_size']
     }
 
-    # train_dataloader, val_dataloader, stats, is_sim = load_data(dataset_dir, num_episodes, batch_size_train, batch_size_val)
-    train_dataloader, val_dataloader, stats, is_sim = load_data_improved(dataset_dir, num_episodes, batch_size_train, batch_size_val)
-
-
     policy_config['camera_names'] = CAMERA_NAMES
     config['camera_names'] = CAMERA_NAMES
+    camera_names = config['camera_names']
+    print("camera_names : ", camera_names)
 
+
+    # train_dataloader, val_dataloader, stats, is_sim = load_data(dataset_dir, num_episodes, batch_size_train, batch_size_val)
+    train_dataloader, val_dataloader, stats, is_sim = load_data_improved(dataset_dir, num_episodes, arm_delay_time, use_depth_image,
+              use_robot_base, camera_names, batch_size_train, batch_size_val)
 
 
     # save dataset stats
@@ -136,11 +146,29 @@ def get_image(ts, camera_names):
 
 
 def forward_pass(data, policy):
+    # pdb.set_trace()
     image_data, qpos_data, action_data, is_pad , task_emb = data
     image_data, qpos_data, action_data, is_pad = image_data.cuda(), qpos_data.cuda(), action_data.cuda(), is_pad.cuda()
     task_emb = task_emb.cuda()
     return policy(qpos_data, image_data, action_data, is_pad,task_emb) # TODO remove None
 
+
+def forward_pass_improved(data, policy):
+    # 解包数据字典
+    image_data = data['image_data'].cuda()
+    qpos_data = data['qpos_data'].cuda()
+    action_data = data['action_data'].cuda()
+    is_pad = data['action_is_pad'].cuda()
+    task_emb = data['task_emb'].cuda()
+
+    # 获取批次大小和序列长度
+    batch_size, seq_len = action_data.shape[:2]
+    # pdb.set_trace()
+    # 重塑数据以适应策略网络
+    # image_data = image_data.view(batch_size * seq_len, *image_data.shape[2:])
+    # qpos_data = qpos_data.view(batch_size * seq_len, -1)
+    
+    return policy(qpos_data, image_data, action_data, is_pad,task_emb)
 
 def train_bc(train_dataloader, val_dataloader, config):
     num_epochs = config['num_epochs']
@@ -168,7 +196,8 @@ def train_bc(train_dataloader, val_dataloader, config):
             policy.eval()
             epoch_dicts = []
             for batch_idx, data in enumerate(val_dataloader):
-                forward_dict = forward_pass(data, policy)
+                logger.info(f"val dataloader is fetching data, the length is {len(data)}.")
+                forward_dict = forward_pass_improved(data, policy)
                 epoch_dicts.append(forward_dict)
             epoch_summary = compute_dict_mean(epoch_dicts)
             validation_history.append(epoch_summary)
@@ -187,7 +216,7 @@ def train_bc(train_dataloader, val_dataloader, config):
         policy.train()
         optimizer.zero_grad()
         for batch_idx, data in enumerate(train_dataloader):
-            forward_dict = forward_pass(data, policy)
+            forward_dict = forward_pass_improved(data, policy)
             # backward
             loss = forward_dict['loss']
             loss.backward()
@@ -256,6 +285,9 @@ if __name__ == '__main__':
     parser.add_argument('--num_epochs', action='store', type=int, help='num_epochs', required=True)
     parser.add_argument('--lr', action='store', type=float, help='lr', required=True)
     parser.add_argument('--run_name', '--run_name', action='store', type=str, help='run name for logs', required=True)
+    parser.add_argument('--arm_delay_time', action='store', type=int, help='arm_delay_time', default=0, required=False)
+    parser.add_argument('--use_depth_image', action='store', type=bool, help='use_depth_image', default=False, required=False)
+    parser.add_argument('--use_robot_base', action='store', type=bool, help='use_robot_base', default=False, required=False)
     # for ACT
     parser.add_argument('--kl_weight', action='store', type=int, help='KL Weight', required=False)
     parser.add_argument('--chunk_size', action='store', type=int, help='chunk_size', required=False)

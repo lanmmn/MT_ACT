@@ -1,0 +1,206 @@
+2024-07-26 14:34:33,559 INFO    StreamThr :3907 [internal.py:wandb_internal():85] W&B internal server running at pid: 3907, started at: 2024-07-26 14:34:33.558294
+2024-07-26 14:34:33,561 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: status
+2024-07-26 14:34:33,565 INFO    WriterThread:3907 [datastore.py:open_for_write():87] open: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/run-j6yafl62.wandb
+2024-07-26 14:34:33,566 DEBUG   SenderThread:3907 [sender.py:send():379] send: header
+2024-07-26 14:34:33,592 DEBUG   SenderThread:3907 [sender.py:send():379] send: run
+2024-07-26 14:34:34,682 INFO    SenderThread:3907 [dir_watcher.py:__init__():211] watching files in: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files
+2024-07-26 14:34:34,682 INFO    SenderThread:3907 [sender.py:_start_run_threads():1188] run started: j6yafl62 with start time 1721975673.56012
+2024-07-26 14:34:34,696 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: check_version
+2024-07-26 14:34:34,697 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: check_version
+2024-07-26 14:34:37,408 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: run_start
+2024-07-26 14:34:37,416 DEBUG   HandlerThread:3907 [system_info.py:__init__():26] System info init
+2024-07-26 14:34:37,416 DEBUG   HandlerThread:3907 [system_info.py:__init__():41] System info init done
+2024-07-26 14:34:37,416 INFO    HandlerThread:3907 [system_monitor.py:start():194] Starting system monitor
+2024-07-26 14:34:37,416 INFO    SystemMonitor:3907 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-26 14:34:37,416 INFO    HandlerThread:3907 [system_monitor.py:probe():214] Collecting system info
+2024-07-26 14:34:37,417 INFO    SystemMonitor:3907 [interfaces.py:start():188] Started cpu monitoring
+2024-07-26 14:34:37,418 INFO    SystemMonitor:3907 [interfaces.py:start():188] Started disk monitoring
+2024-07-26 14:34:37,419 INFO    SystemMonitor:3907 [interfaces.py:start():188] Started gpu monitoring
+2024-07-26 14:34:37,419 INFO    SystemMonitor:3907 [interfaces.py:start():188] Started memory monitoring
+2024-07-26 14:34:37,420 INFO    SystemMonitor:3907 [interfaces.py:start():188] Started network monitoring
+2024-07-26 14:34:37,490 DEBUG   HandlerThread:3907 [system_info.py:probe():152] Probing system
+2024-07-26 14:34:37,498 DEBUG   HandlerThread:3907 [system_info.py:_probe_git():137] Probing git
+2024-07-26 14:34:37,514 DEBUG   HandlerThread:3907 [system_info.py:_probe_git():145] Probing git done
+2024-07-26 14:34:37,514 DEBUG   HandlerThread:3907 [system_info.py:probe():200] Probing system done
+2024-07-26 14:34:37,514 DEBUG   HandlerThread:3907 [system_monitor.py:probe():223] {'os': 'Linux-5.4.15-1.el7.elrepo.x86_64-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-07-26T06:34:37.490771', 'startedAt': '2024-07-26T06:34:33.540545', 'docker': None, 'cuda': None, 'args': ('--dataset_dir', '/data/Datasets/', '--ckpt_dir', '/home/lanzihan/workspace/Github/roboagent/ckpt', '--policy_class', 'ACT', '--kl_weight', '10', '--chunk_size', '32', '--hidden_dim', '512', '--batch_size', '64', '--dim_feedforward', '3200', '--seed', '0', '--temporal_agg', '--num_epochs', '3500', '--lr', '1e-5', '--multi_task', '--run_name', 'lanzihan'), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:lanmmn/MT-ACT.git', 'commit': 'da1dd70b78e7e344dc9c2b87c1cb55f8204ca00a'}, 'email': 'lanzihan@megvii.com', 'root': '/home/lanzihan/workspace/Github/roboagent', 'host': 'lanzihan-pbl7l-242001-worker-0', 'username': 'lanzihan', 'executable': '/home/lanzihan/miniconda3/envs/aloha/bin/python', 'cpu_count': 40, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2098.5034250000003, 'min': 800.0, 'max': 2100.0}, 'cpu_freq_per_core': [{'current': 2099.959, 'min': 800.0, 'max': 2100.0}, {'current': 2100.008, 'min': 800.0, 'max': 2100.0}, {'current': 2100.016, 'min': 800.0, 'max': 2100.0}, {'current': 2100.043, 'min': 800.0, 'max': 2100.0}, {'current': 2100.001, 'min': 800.0, 'max': 2100.0}, {'current': 2100.057, 'min': 800.0, 'max': 2100.0}, {'current': 2100.173, 'min': 800.0, 'max': 2100.0}, {'current': 2100.876, 'min': 800.0, 'max': 2100.0}, {'current': 2100.091, 'min': 800.0, 'max': 2100.0}, {'current': 2100.037, 'min': 800.0, 'max': 2100.0}, {'current': 2100.012, 'min': 800.0, 'max': 2100.0}, {'current': 2099.998, 'min': 800.0, 'max': 2100.0}, {'current': 2100.641, 'min': 800.0, 'max': 2100.0}, {'current': 2100.153, 'min': 800.0, 'max': 2100.0}, {'current': 2100.115, 'min': 800.0, 'max': 2100.0}, {'current': 2100.026, 'min': 800.0, 'max': 2100.0}, {'current': 2100.028, 'min': 800.0, 'max': 2100.0}, {'current': 2086.716, 'min': 800.0, 'max': 2100.0}, {'current': 2099.999, 'min': 800.0, 'max': 2100.0}, {'current': 2099.998, 'min': 800.0, 'max': 2100.0}, {'current': 2100.249, 'min': 800.0, 'max': 2100.0}, {'current': 2100.004, 'min': 800.0, 'max': 2100.0}, {'current': 2100.317, 'min': 800.0, 'max': 2100.0}, {'current': 2100.951, 'min': 800.0, 'max': 2100.0}, {'current': 2099.77, 'min': 800.0, 'max': 2100.0}, {'current': 2101.232, 'min': 800.0, 'max': 2100.0}, {'current': 2100.0, 'min': 800.0, 'max': 2100.0}, {'current': 2100.002, 'min': 800.0, 'max': 2100.0}, {'current': 2102.163, 'min': 800.0, 'max': 2100.0}, {'current': 2098.551, 'min': 800.0, 'max': 2100.0}, {'current': 2101.39, 'min': 800.0, 'max': 2100.0}, {'current': 2100.116, 'min': 800.0, 'max': 2100.0}, {'current': 2100.498, 'min': 800.0, 'max': 2100.0}, {'current': 2100.037, 'min': 800.0, 'max': 2100.0}, {'current': 2100.027, 'min': 800.0, 'max': 2100.0}, {'current': 2100.79, 'min': 800.0, 'max': 2100.0}, {'current': 2101.064, 'min': 800.0, 'max': 2100.0}, {'current': 2100.153, 'min': 800.0, 'max': 2100.0}, {'current': 2100.006, 'min': 800.0, 'max': 2100.0}, {'current': 2100.011, 'min': 800.0, 'max': 2100.0}, {'current': 2099.992, 'min': 800.0, 'max': 2100.0}, {'current': 2099.968, 'min': 800.0, 'max': 2100.0}, {'current': 2101.119, 'min': 800.0, 'max': 2100.0}, {'current': 2100.826, 'min': 800.0, 'max': 2100.0}, {'current': 2100.0, 'min': 800.0, 'max': 2100.0}, {'current': 2099.963, 'min': 800.0, 'max': 2100.0}, {'current': 2100.405, 'min': 800.0, 'max': 2100.0}, {'current': 2100.336, 'min': 800.0, 'max': 2100.0}, {'current': 2101.284, 'min': 800.0, 'max': 2100.0}, {'current': 2101.169, 'min': 800.0, 'max': 2100.0}, {'current': 2100.002, 'min': 800.0, 'max': 2100.0}, {'current': 2099.997, 'min': 800.0, 'max': 2100.0}, {'current': 2100.441, 'min': 800.0, 'max': 2100.0}, {'current': 2101.195, 'min': 800.0, 'max': 2100.0}, {'current': 2100.049, 'min': 800.0, 'max': 2100.0}, {'current': 2100.101, 'min': 800.0, 'max': 2100.0}, {'current': 2100.023, 'min': 800.0, 'max': 2100.0}, {'current': 2090.144, 'min': 800.0, 'max': 2100.0}, {'current': 2100.222, 'min': 800.0, 'max': 2100.0}, {'current': 2094.529, 'min': 800.0, 'max': 2100.0}, {'current': 2100.486, 'min': 800.0, 'max': 2100.0}, {'current': 2100.0, 'min': 800.0, 'max': 2100.0}, {'current': 2100.032, 'min': 800.0, 'max': 2100.0}, {'current': 2100.309, 'min': 800.0, 'max': 2100.0}, {'current': 2092.25, 'min': 800.0, 'max': 2100.0}, {'current': 2100.087, 'min': 800.0, 'max': 2100.0}, {'current': 2099.971, 'min': 800.0, 'max': 2100.0}, {'current': 2100.292, 'min': 800.0, 'max': 2100.0}, {'current': 2101.625, 'min': 800.0, 'max': 2100.0}, {'current': 2099.997, 'min': 800.0, 'max': 2100.0}, {'current': 2100.446, 'min': 800.0, 'max': 2100.0}, {'current': 2102.431, 'min': 800.0, 'max': 2100.0}, {'current': 2100.172, 'min': 800.0, 'max': 2100.0}, {'current': 2100.376, 'min': 800.0, 'max': 2100.0}, {'current': 2100.019, 'min': 800.0, 'max': 2100.0}, {'current': 2101.271, 'min': 800.0, 'max': 2100.0}, {'current': 2100.077, 'min': 800.0, 'max': 2100.0}, {'current': 2099.982, 'min': 800.0, 'max': 2100.0}, {'current': 2100.045, 'min': 800.0, 'max': 2100.0}, {'current': 2100.644, 'min': 800.0, 'max': 2100.0}], 'disk': {'/': {'total': 49.9755859375, 'used': 34.29296875}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 146.484375}}
+2024-07-26 14:34:37,514 INFO    HandlerThread:3907 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-26 14:34:37,514 INFO    HandlerThread:3907 [system_monitor.py:probe():227] Publishing system info
+2024-07-26 14:34:37,515 DEBUG   HandlerThread:3907 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-26 14:34:37,519 ERROR   HandlerThread:3907 [system_info.py:_save_conda():223] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/internal/system/system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/subprocess.py", line 1720, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-07-26 14:34:37,521 DEBUG   HandlerThread:3907 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-26 14:34:37,524 INFO    HandlerThread:3907 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-26 14:34:37,530 DEBUG   SenderThread:3907 [sender.py:send():379] send: files
+2024-07-26 14:34:37,530 INFO    SenderThread:3907 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-26 14:34:37,689 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/conda-environment.yaml
+2024-07-26 14:34:37,689 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/wandb-metadata.json
+2024-07-26 14:34:37,735 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-26 14:34:37,735 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: python_packages
+2024-07-26 14:34:37,739 DEBUG   SenderThread:3907 [sender.py:send():379] send: telemetry
+2024-07-26 14:34:37,739 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-26 14:34:37,739 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:37,740 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: stop_status
+2024-07-26 14:34:38,689 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/requirements.txt
+2024-07-26 14:34:38,745 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:39,743 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:40,743 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:40,754 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 14:34:41,695 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/output.log
+2024-07-26 14:34:41,743 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:42,743 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:43,699 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/output.log
+2024-07-26 14:34:43,743 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:43,795 DEBUG   SenderThread:3907 [sender.py:send():379] send: exit
+2024-07-26 14:34:43,795 INFO    SenderThread:3907 [sender.py:send_exit():586] handling exit code: 1
+2024-07-26 14:34:43,795 INFO    SenderThread:3907 [sender.py:send_exit():588] handling runtime: 6
+2024-07-26 14:34:43,798 INFO    SenderThread:3907 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 14:34:43,798 INFO    SenderThread:3907 [sender.py:send_exit():594] send defer
+2024-07-26 14:34:43,798 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,798 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-26 14:34:43,799 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,799 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-26 14:34:43,799 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 1
+2024-07-26 14:34:43,799 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,799 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-26 14:34:43,799 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,799 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-26 14:34:43,799 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 2
+2024-07-26 14:34:43,799 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,799 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-26 14:34:43,799 INFO    HandlerThread:3907 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-26 14:34:43,800 DEBUG   SystemMonitor:3907 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-26 14:34:43,800 INFO    HandlerThread:3907 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-26 14:34:43,800 DEBUG   SystemMonitor:3907 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-26 14:34:43,801 INFO    HandlerThread:3907 [interfaces.py:finish():200] Joined disk monitor
+2024-07-26 14:34:43,801 DEBUG   SystemMonitor:3907 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-26 14:34:43,815 INFO    HandlerThread:3907 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-26 14:34:43,816 INFO    HandlerThread:3907 [interfaces.py:finish():200] Joined memory monitor
+2024-07-26 14:34:43,816 INFO    HandlerThread:3907 [interfaces.py:finish():200] Joined network monitor
+2024-07-26 14:34:43,816 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,816 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-26 14:34:43,817 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 3
+2024-07-26 14:34:43,817 DEBUG   SenderThread:3907 [sender.py:send():379] send: stats
+2024-07-26 14:34:43,817 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,817 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-26 14:34:43,817 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,817 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-26 14:34:43,817 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 4
+2024-07-26 14:34:43,818 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,818 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-26 14:34:43,818 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,818 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-26 14:34:43,818 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 5
+2024-07-26 14:34:43,818 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,818 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-26 14:34:43,818 DEBUG   SenderThread:3907 [sender.py:send():379] send: summary
+2024-07-26 14:34:43,821 INFO    SenderThread:3907 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-26 14:34:43,821 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,821 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-26 14:34:43,821 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 6
+2024-07-26 14:34:43,821 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:43,821 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-26 14:34:43,821 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:43,822 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-26 14:34:43,827 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: status_report
+2024-07-26 14:34:43,889 INFO    wandb-upload_0:3907 [upload_job.py:push():130] Uploaded file /tmp/tmp6_a2h6hcwandb/2kdlzrqv-wandb-metadata.json
+2024-07-26 14:34:44,086 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 7
+2024-07-26 14:34:44,086 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:44,086 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-26 14:34:44,086 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:44,087 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-26 14:34:44,701 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/config.yaml
+2024-07-26 14:34:44,701 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/wandb-summary.json
+2024-07-26 14:34:44,789 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 8
+2024-07-26 14:34:44,789 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:44,789 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-26 14:34:44,790 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:44,790 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-26 14:34:44,790 INFO    SenderThread:3907 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-26 14:34:44,792 INFO    SenderThread:3907 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-26 14:34:44,794 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 14:34:44,838 INFO    SenderThread:3907 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-26 14:34:44,846 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 9
+2024-07-26 14:34:44,846 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 14:34:44,847 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:44,847 DEBUG   SenderThread:3907 [sender.py:send():379] send: artifact
+2024-07-26 14:34:44,847 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-26 14:34:45,704 INFO    Thread-12 :3907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/output.log
+2024-07-26 14:34:45,796 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 14:34:46,141 INFO    SenderThread:3907 [sender.py:send_artifact():1530] sent artifact job-git_github.com_lanmmn_MT-ACT.git_train.py - {'id': 'QXJ0aWZhY3Q6MTAzOTAxMzUzNg==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMzU0NjM2OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTAzOTA3NTEyMg==', 'versionIndex': 1}}}
+2024-07-26 14:34:46,141 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:46,142 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-26 14:34:46,142 INFO    SenderThread:3907 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-26 14:34:46,718 INFO    SenderThread:3907 [dir_watcher.py:finish():388] scan: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files
+2024-07-26 14:34:46,718 INFO    SenderThread:3907 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/config.yaml config.yaml
+2024-07-26 14:34:46,718 INFO    SenderThread:3907 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/conda-environment.yaml conda-environment.yaml
+2024-07-26 14:34:46,719 INFO    SenderThread:3907 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/wandb-metadata.json wandb-metadata.json
+2024-07-26 14:34:46,719 INFO    SenderThread:3907 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/requirements.txt requirements.txt
+2024-07-26 14:34:46,722 INFO    SenderThread:3907 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/output.log output.log
+2024-07-26 14:34:46,726 INFO    SenderThread:3907 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/wandb-summary.json wandb-summary.json
+2024-07-26 14:34:46,729 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 10
+2024-07-26 14:34:46,729 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 14:34:46,730 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:46,730 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-26 14:34:46,733 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:46,733 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-26 14:34:46,733 INFO    SenderThread:3907 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-26 14:34:46,797 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 14:34:46,797 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 14:34:47,324 INFO    wandb-upload_1:3907 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/requirements.txt
+2024-07-26 14:34:47,473 INFO    wandb-upload_0:3907 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/config.yaml
+2024-07-26 14:34:47,651 INFO    wandb-upload_3:3907 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/wandb-summary.json
+2024-07-26 14:34:47,798 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 14:34:47,798 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 14:34:47,988 INFO    wandb-upload_2:3907 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/files/output.log
+2024-07-26 14:34:48,189 INFO    Thread-11 :3907 [sender.py:transition_state():614] send defer: 11
+2024-07-26 14:34:48,189 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:48,189 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-26 14:34:48,190 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:48,190 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-26 14:34:48,190 INFO    SenderThread:3907 [file_pusher.py:join():175] waiting for file pusher
+2024-07-26 14:34:48,190 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 12
+2024-07-26 14:34:48,190 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:48,190 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-26 14:34:48,190 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:48,190 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-26 14:34:48,191 INFO    SenderThread:3907 [file_stream.py:finish():601] file stream finish called
+2024-07-26 14:34:48,442 INFO    SenderThread:3907 [file_stream.py:finish():605] file stream finish is done
+2024-07-26 14:34:48,442 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 13
+2024-07-26 14:34:48,443 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:48,443 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-26 14:34:48,443 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:48,443 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-26 14:34:48,443 INFO    SenderThread:3907 [sender.py:transition_state():614] send defer: 14
+2024-07-26 14:34:48,444 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: defer
+2024-07-26 14:34:48,444 INFO    HandlerThread:3907 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-26 14:34:48,444 DEBUG   SenderThread:3907 [sender.py:send():379] send: final
+2024-07-26 14:34:48,444 DEBUG   SenderThread:3907 [sender.py:send():379] send: footer
+2024-07-26 14:34:48,444 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: defer
+2024-07-26 14:34:48,444 INFO    SenderThread:3907 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-26 14:34:48,445 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 14:34:48,445 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 14:34:48,446 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: server_info
+2024-07-26 14:34:48,446 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: server_info
+2024-07-26 14:34:48,449 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-26 14:34:48,449 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-26 14:34:48,450 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-26 14:34:48,450 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-26 14:34:48,686 DEBUG   SenderThread:3907 [sender.py:send_request():406] send_request: poll_exit
+2024-07-26 14:34:48,687 INFO    MainThread:3907 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-26 14:34:48,687 INFO    MainThread:3907 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-26 14:34:48,687 INFO    MainThread:3907 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-26 14:34:48,688 DEBUG   HandlerThread:3907 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-26 14:34:48,688 INFO    HandlerThread:3907 [handler.py:finish():882] shutting down handler
+2024-07-26 14:34:49,449 INFO    WriterThread:3907 [datastore.py:close():296] close: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_143433-j6yafl62/run-j6yafl62.wandb
+2024-07-26 14:34:49,687 INFO    SenderThread:3907 [sender.py:finish():1608] shutting down sender
+2024-07-26 14:34:49,687 INFO    SenderThread:3907 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-26 14:34:49,687 INFO    SenderThread:3907 [file_pusher.py:join():175] waiting for file pusher

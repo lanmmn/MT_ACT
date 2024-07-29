@@ -1,0 +1,109 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+  0%|                                                                                                                                                                                                 | 0/3000 [00:00<?, ?it/s]2024-07-26 14:38:50,944 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   72.79875
+l1: 0.695 kl: 7.210 loss: 72.799
+2024-07-26 14:38:52,220 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 44.35121
+l1: 0.809 kl: 4.354 loss: 44.351
+Saved plots to /home/lanzihan/workspace/Github/roboagent/ckpt
+Epoch 1
+Val loss:   17.67929
+l1: 0.602 kl: 1.708 loss: 17.679
+  0%|                                                                                                                                                                                       | 1/3000 [00:06<5:28:55,  6.58s/it]2024-07-26 14:38:57,384 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:38:57,582 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 18.81688
+l1: 0.715 kl: 1.810 loss: 18.817
+Epoch 2
+Val loss:   8.94027
+l1: 0.754 kl: 0.819 loss: 8.940
+  0%|                                                                                                                                                                                       | 2/3000 [00:08<3:25:07,  4.11s/it]2024-07-26 14:38:59,756 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:38:59,948 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 11.03434
+l1: 0.682 kl: 1.035 loss: 11.034
+Epoch 3
+  0%|▏                                                                                                                                                                                      | 3/3000 [00:11<2:45:40,  3.32s/it]
+Val loss:   4.49488
+  0%|▏                                                                                                                                                                                      | 3/3000 [00:11<2:45:40,  3.32s/it]2024-07-26 14:39:02,140 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:02,341 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 8.32461
+l1: 0.638 kl: 0.769 loss: 8.325
+Epoch 4
+Val loss:   3.21004
+l1: 0.439 kl: 0.277 loss: 3.210
+  0%|▏                                                                                                                                                                                      | 4/3000 [00:13<2:27:47,  2.96s/it]2024-07-26 14:39:04,545 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:04,752 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 6.34695
+l1: 0.622 kl: 0.572 loss: 6.347
+Epoch 5
+Val loss:   1.96034
+l1: 0.470 kl: 0.149 loss: 1.960
+  0%|▎                                                                                                                                                                                      | 5/3000 [00:16<2:18:07,  2.77s/it]2024-07-26 14:39:06,988 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:07,187 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 6.43358
+l1: 0.583 kl: 0.585 loss: 6.434
+Epoch 6
+Val loss:   1.76364
+l1: 0.389 kl: 0.138 loss: 1.764
+  0%|▎                                                                                                                                                                                      | 6/3000 [00:18<2:11:53,  2.64s/it]2024-07-26 14:39:09,371 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:09,577 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 5.20540
+l1: 0.598 kl: 0.461 loss: 5.205
+Epoch 7
+Val loss:   1.34526
+l1: 0.326 kl: 0.102 loss: 1.345
+  0%|▍                                                                                                                                                                                      | 7/3000 [00:20<2:07:49,  2.56s/it]2024-07-26 14:39:11,784 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:12,004 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 5.03446
+l1: 0.581 kl: 0.445 loss: 5.034
+Epoch 8
+  0%|▍                                                                                                                                                                                      | 8/3000 [00:23<2:05:36,  2.52s/it]
+Val loss:   1.06177
+  0%|▍                                                                                                                                                                                      | 8/3000 [00:23<2:05:36,  2.52s/it]2024-07-26 14:39:14,198 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:14,399 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.48780
+l1: 0.561 kl: 0.393 loss: 4.488
+Epoch 9
+Val loss:   1.15325
+l1: 0.404 kl: 0.075 loss: 1.153
+  0%|▌                                                                                                                                                                                      | 9/3000 [00:25<2:04:54,  2.51s/it]2024-07-26 14:39:16,671 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:16,877 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.39966
+l1: 0.540 kl: 0.386 loss: 4.400
+Epoch 10
+Val loss:   1.04051
+l1: 0.401 kl: 0.064 loss: 1.041
+  0%|▌                                                                                                                                                                                     | 10/3000 [00:28<2:03:33,  2.48s/it]2024-07-26 14:39:19,102 - INFO - val dataloader is fetching data, the length is 5.
+2024-07-26 14:39:19,326 - INFO - val dataloader is fetching data, the length is 5.
+  0%|▌                                                                                                                                                                                     | 10/3000 [00:30<2:31:34,  3.04s/it]
+Traceback (most recent call last):
+  File "train.py", line 301, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 107, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 219, in train_bc
+    forward_dict = forward_pass_improved(data, policy)
+  File "train.py", line 171, in forward_pass_improved
+    return policy(qpos_data, image_data, action_data, is_pad,task_emb)
+  File "/home/lanzihan/workspace/Github/roboagent/policy.py", line 29, in __call__
+    a_hat, is_pad_hat, (mu, logvar) = self.model(qpos, image, env_state, actions, is_pad,task_emb)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/detr_vae.py", line 148, in forward
+    features, pos = self.backbones[0](image[:, cam_id], task_emb=task_emb) # HARDCODED
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/backbone.py", line 193, in forward
+    pos.append(self[1](x).to(x.dtype))
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lanzihan/workspace/Github/roboagent/detr/models/position_encoding.py", line 36, in forward
+    not_mask = torch.ones_like(x[0, [0]])
+KeyboardInterrupt

@@ -1,0 +1,83 @@
+2024-07-26 13:52:57,145 INFO    StreamThr :1182 [internal.py:wandb_internal():85] W&B internal server running at pid: 1182, started at: 2024-07-26 13:52:57.144327
+2024-07-26 13:52:57,147 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: status
+2024-07-26 13:52:57,151 INFO    WriterThread:1182 [datastore.py:open_for_write():87] open: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_135257-e4ax1xj2/run-e4ax1xj2.wandb
+2024-07-26 13:52:57,152 DEBUG   SenderThread:1182 [sender.py:send():379] send: header
+2024-07-26 13:52:57,181 DEBUG   SenderThread:1182 [sender.py:send():379] send: run
+2024-07-26 13:53:02,182 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:07,184 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:12,185 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:17,186 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:22,188 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:27,189 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:32,191 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:37,192 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:42,193 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:47,195 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:52,197 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:53:57,198 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:54:00,424 INFO    SenderThread:1182 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f8905b0f310>, 'Connection to api.wandb.ai timed out. (connect timeout=20)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f8905b0f310>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f8905b0f310>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+2024-07-26 13:54:02,200 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:54:07,201 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:54:12,203 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-26 13:54:13,749 DEBUG   HandlerThread:1182 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-26 13:54:13,750 INFO    HandlerThread:1182 [handler.py:finish():882] shutting down handler
+2024-07-26 13:54:14,193 INFO    WriterThread:1182 [datastore.py:close():296] close: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_135257-e4ax1xj2/run-e4ax1xj2.wandb

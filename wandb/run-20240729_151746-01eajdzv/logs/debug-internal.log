@@ -1,0 +1,752 @@
+2024-07-29 15:17:46,240 INFO    StreamThr :1565 [internal.py:wandb_internal():85] W&B internal server running at pid: 1565, started at: 2024-07-29 15:17:46.239189
+2024-07-29 15:17:46,244 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status
+2024-07-29 15:17:46,246 INFO    WriterThread:1565 [datastore.py:open_for_write():87] open: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/run-01eajdzv.wandb
+2024-07-29 15:17:46,251 DEBUG   SenderThread:1565 [sender.py:send():379] send: header
+2024-07-29 15:17:46,273 DEBUG   SenderThread:1565 [sender.py:send():379] send: run
+2024-07-29 15:17:47,002 INFO    SenderThread:1565 [dir_watcher.py:__init__():211] watching files in: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files
+2024-07-29 15:17:47,002 INFO    SenderThread:1565 [sender.py:_start_run_threads():1188] run started: 01eajdzv with start time 1722237466.241156
+2024-07-29 15:17:47,016 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: check_version
+2024-07-29 15:17:47,017 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: check_version
+2024-07-29 15:17:52,017 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-29 15:17:52,019 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:17:52,033 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: run_start
+2024-07-29 15:17:52,043 DEBUG   HandlerThread:1565 [system_info.py:__init__():26] System info init
+2024-07-29 15:17:52,044 DEBUG   HandlerThread:1565 [system_info.py:__init__():41] System info init done
+2024-07-29 15:17:52,044 INFO    HandlerThread:1565 [system_monitor.py:start():194] Starting system monitor
+2024-07-29 15:17:52,044 INFO    SystemMonitor:1565 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-29 15:17:52,044 INFO    HandlerThread:1565 [system_monitor.py:probe():214] Collecting system info
+2024-07-29 15:17:52,046 INFO    SystemMonitor:1565 [interfaces.py:start():188] Started cpu monitoring
+2024-07-29 15:17:52,047 INFO    SystemMonitor:1565 [interfaces.py:start():188] Started disk monitoring
+2024-07-29 15:17:52,049 INFO    SystemMonitor:1565 [interfaces.py:start():188] Started gpu monitoring
+2024-07-29 15:17:52,050 INFO    SystemMonitor:1565 [interfaces.py:start():188] Started memory monitoring
+2024-07-29 15:17:52,051 INFO    SystemMonitor:1565 [interfaces.py:start():188] Started network monitoring
+2024-07-29 15:17:52,162 DEBUG   HandlerThread:1565 [system_info.py:probe():152] Probing system
+2024-07-29 15:17:52,173 DEBUG   HandlerThread:1565 [system_info.py:_probe_git():137] Probing git
+2024-07-29 15:17:52,200 DEBUG   HandlerThread:1565 [system_info.py:_probe_git():145] Probing git done
+2024-07-29 15:17:52,200 DEBUG   HandlerThread:1565 [system_info.py:probe():200] Probing system done
+2024-07-29 15:17:52,200 DEBUG   HandlerThread:1565 [system_monitor.py:probe():223] {'os': 'Linux-5.4.15-1.el7.elrepo.x86_64-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-07-29T07:17:52.162903', 'startedAt': '2024-07-29T07:17:46.214175', 'docker': None, 'cuda': None, 'args': ('--dataset_dir', '/data/Datasets/', '--ckpt_dir', '/data/ckpt/mtact_bs32_lr2_lrbb1_epi200_cs32', '--policy_class', 'ACT', '--kl_weight', '10', '--chunk_size', '32', '--hidden_dim', '512', '--batch_size', '32', '--dim_feedforward', '3200', '--seed', '0', '--temporal_agg', '--num_epochs', '3000', '--lr', '2e-5', '--multi_task', '--run_name', 'lanzihan-bs32-lr2-lrb1-cs32-numepi_200'), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:lanmmn/MT-ACT.git', 'commit': 'da1dd70b78e7e344dc9c2b87c1cb55f8204ca00a'}, 'email': 'lanzihan@megvii.com', 'root': '/home/lanzihan/workspace/Github/roboagent', 'host': 'lanzihan-rtxc5-301134-worker-0', 'username': 'lanzihan', 'executable': '/home/lanzihan/miniconda3/envs/aloha/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1142.2936249999996, 'min': 1000.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 1359.846, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.26, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.422, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.255, 'min': 1000.0, 'max': 3700.0}, {'current': 1266.554, 'min': 1000.0, 'max': 3700.0}, {'current': 1001.0, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.289, 'min': 1000.0, 'max': 3700.0}, {'current': 1055.428, 'min': 1000.0, 'max': 3700.0}, {'current': 1384.658, 'min': 1000.0, 'max': 3700.0}, {'current': 1484.807, 'min': 1000.0, 'max': 3700.0}, {'current': 1174.202, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.146, 'min': 1000.0, 'max': 3700.0}, {'current': 1080.242, 'min': 1000.0, 'max': 3700.0}, {'current': 1481.58, 'min': 1000.0, 'max': 3700.0}, {'current': 1157.229, 'min': 1000.0, 'max': 3700.0}, {'current': 1055.279, 'min': 1000.0, 'max': 3700.0}, {'current': 1445.613, 'min': 1000.0, 'max': 3700.0}, {'current': 1292.957, 'min': 1000.0, 'max': 3700.0}, {'current': 999.85, 'min': 1000.0, 'max': 3700.0}, {'current': 1094.907, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.52, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.595, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.302, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.249, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.12, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.149, 'min': 1000.0, 'max': 3700.0}, {'current': 2600.013, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.029, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.734, 'min': 1000.0, 'max': 3700.0}, {'current': 999.968, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.085, 'min': 1000.0, 'max': 3700.0}, {'current': 3100.275, 'min': 1000.0, 'max': 3700.0}, {'current': 1142.18, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.13, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.712, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.833, 'min': 1000.0, 'max': 3700.0}, {'current': 1056.723, 'min': 1000.0, 'max': 3700.0}, {'current': 1001.089, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.255, 'min': 1000.0, 'max': 3700.0}, {'current': 1051.833, 'min': 1000.0, 'max': 3700.0}, {'current': 1151.9, 'min': 1000.0, 'max': 3700.0}, {'current': 1008.497, 'min': 1000.0, 'max': 3700.0}, {'current': 1102.594, 'min': 1000.0, 'max': 3700.0}, {'current': 1001.011, 'min': 1000.0, 'max': 3700.0}, {'current': 1176.086, 'min': 1000.0, 'max': 3700.0}, {'current': 1160.118, 'min': 1000.0, 'max': 3700.0}, {'current': 1245.094, 'min': 1000.0, 'max': 3700.0}, {'current': 1084.097, 'min': 1000.0, 'max': 3700.0}, {'current': 1156.448, 'min': 1000.0, 'max': 3700.0}, {'current': 1447.755, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.002, 'min': 1000.0, 'max': 3700.0}, {'current': 1070.868, 'min': 1000.0, 'max': 3700.0}, {'current': 1001.045, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.695, 'min': 1000.0, 'max': 3700.0}, {'current': 999.5, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.298, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.179, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.036, 'min': 1000.0, 'max': 3700.0}, {'current': 2599.995, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.134, 'min': 1000.0, 'max': 3700.0}, {'current': 999.988, 'min': 1000.0, 'max': 3700.0}, {'current': 999.863, 'min': 1000.0, 'max': 3700.0}, {'current': 1000.003, 'min': 1000.0, 'max': 3700.0}, {'current': 3169.938, 'min': 1000.0, 'max': 3700.0}], 'disk': {'/': {'total': 49.9755859375, 'used': 34.9638671875}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 146.484375}}
+2024-07-29 15:17:52,200 INFO    HandlerThread:1565 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-29 15:17:52,200 INFO    HandlerThread:1565 [system_monitor.py:probe():227] Publishing system info
+2024-07-29 15:17:52,201 DEBUG   HandlerThread:1565 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-29 15:17:53,018 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/conda-environment.yaml
+2024-07-29 15:17:55,180 DEBUG   HandlerThread:1565 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-29 15:17:55,183 INFO    HandlerThread:1565 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-29 15:17:55,193 DEBUG   SenderThread:1565 [sender.py:send():379] send: files
+2024-07-29 15:17:55,193 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-29 15:17:55,277 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-29 15:17:55,278 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: python_packages
+2024-07-29 15:17:55,278 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:17:55,280 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:17:55,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:17:55,711 DEBUG   SenderThread:1565 [sender.py:send():379] send: telemetry
+2024-07-29 15:17:56,021 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/conda-environment.yaml
+2024-07-29 15:17:56,021 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/requirements.txt
+2024-07-29 15:17:56,021 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:17:56,022 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-metadata.json
+2024-07-29 15:17:56,279 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:17:56,313 INFO    wandb-upload_0:1565 [upload_job.py:push():130] Uploaded file /tmp/tmpywxmbnvzwandb/3jxq7mw0-wandb-metadata.json
+2024-07-29 15:17:57,202 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:17:57,279 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:17:58,026 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:17:58,279 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:17:59,028 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:17:59,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:00,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:01,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:02,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:02,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:03,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:04,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:05,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:06,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:07,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:07,475 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:08,043 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:08,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:09,045 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:09,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:10,278 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:18:10,279 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:18:10,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:11,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:12,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:12,636 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:13,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:14,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:15,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:16,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:17,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:18,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:18,287 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:19,060 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/config.yaml
+2024-07-29 15:18:19,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:20,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:21,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:22,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:23,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:24,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:24,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:25,278 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:18:25,279 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:18:25,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:26,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:27,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:28,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:29,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:29,600 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:30,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:31,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:32,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:33,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:34,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:35,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:35,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:36,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:37,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:38,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:39,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:40,278 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:18:40,279 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:18:40,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:40,624 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:41,249 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:18:41,251 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:18:41,251 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:18:41,256 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:18:41,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:42,180 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:42,180 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_created():271] file/dir created: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:18:42,291 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:43,293 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:44,184 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:44,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:45,186 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:45,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:46,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:46,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:47,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:48,294 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:49,293 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:50,293 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:51,294 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:52,052 DEBUG   SystemMonitor:1565 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-29 15:18:52,054 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:18:52,054 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:52,199 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:52,293 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:53,200 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:18:53,294 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:54,294 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:55,279 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:18:55,280 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:18:55,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:56,294 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:57,294 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:57,602 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:18:58,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:18:59,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:00,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:01,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:02,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:03,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:03,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:04,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:05,295 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:06,296 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:07,296 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:08,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:08,296 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:09,296 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:10,279 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:19:10,280 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:19:10,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:11,297 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:12,297 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:13,297 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:13,552 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:14,297 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:15,297 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:16,297 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:17,153 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:19:17,155 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:19:17,156 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:19:17,162 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:19:17,233 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:19:17,299 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:18,235 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:18,298 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:19,196 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:19,237 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:19,298 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:20,298 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:21,298 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:22,056 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:19:22,299 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:23,299 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:24,291 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:24,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:25,246 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:25,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:19:25,281 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:19:25,299 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:26,248 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:26,299 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:27,299 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:28,300 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:29,300 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:29,581 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:30,300 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:31,300 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:32,300 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:33,301 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:34,301 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:35,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:35,301 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:36,301 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:37,301 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:38,301 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:39,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:40,279 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:19:40,280 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:19:40,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:40,615 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:41,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:42,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:43,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:44,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:45,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:46,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:46,302 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:47,303 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:47,891 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:19:47,892 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:19:47,892 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:19:47,899 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:19:48,281 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:19:48,282 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:48,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:49,283 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:49,303 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:50,303 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:51,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:51,303 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:52,058 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:19:52,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:53,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:54,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:55,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:19:55,282 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:19:55,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:56,296 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:56,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:56,627 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:19:57,298 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:19:57,304 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:58,305 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:19:59,305 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:00,305 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:01,306 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:02,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:02,305 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:03,306 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:04,306 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:05,306 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:06,306 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:07,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:07,306 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:08,307 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:09,307 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:10,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:20:10,281 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:20:10,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:11,307 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:12,307 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:12,589 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:13,307 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:14,307 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:15,308 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:16,308 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:17,308 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:18,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:18,308 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:19,308 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:20,308 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:21,143 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:20:21,145 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:20:21,145 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:20:21,151 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:20:21,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:21,334 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:20:22,059 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:20:22,309 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:22,335 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:20:23,309 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:23,337 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:20:24,061 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:24,309 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:25,280 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:20:25,281 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:20:25,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:26,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:27,311 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:27,344 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:20:28,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:28,346 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:20:29,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:29,530 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:30,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:31,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:32,311 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:33,310 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:34,311 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:35,285 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:35,311 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:36,311 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:37,311 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:38,312 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:39,312 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:40,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:20:40,281 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:20:40,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:40,587 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:41,312 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:42,312 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:43,312 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:44,312 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:45,313 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:46,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:46,313 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:47,313 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:48,313 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:49,313 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:50,313 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:51,286 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:51,314 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:52,052 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:20:52,054 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:20:52,054 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:20:52,061 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:20:52,062 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:20:52,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:52,382 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:20:52,382 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:20:53,314 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:53,383 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:20:54,314 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:55,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:20:55,282 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:20:55,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:56,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:56,593 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:20:57,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:58,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:59,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:20:59,393 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:00,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:00,395 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:01,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:02,287 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:02,315 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:03,316 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:04,316 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:05,316 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:06,316 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:07,316 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:08,287 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:08,316 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:09,317 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:10,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:21:10,282 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:21:10,322 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:11,317 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:12,317 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:13,317 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:13,576 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:14,317 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:15,317 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:16,318 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:17,318 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:18,318 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:19,288 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:19,318 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:20,318 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:21,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:22,062 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:21:22,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:23,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:23,478 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:21:23,480 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:21:23,480 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:21:23,483 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:21:24,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:24,429 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:21:24,429 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:24,520 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:25,281 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:21:25,282 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:21:25,319 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:25,432 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:26,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:27,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:28,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:29,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:29,592 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:30,320 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:30,439 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:31,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:31,443 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:32,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:33,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:34,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:35,288 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:35,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:36,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:37,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:38,321 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:39,322 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:40,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:21:40,283 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:21:40,322 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:40,552 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:41,322 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:42,322 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:43,322 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:44,323 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:45,323 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:46,288 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:46,323 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:47,323 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:48,323 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:49,323 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:50,324 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:51,289 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:51,324 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:52,064 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:21:52,324 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:53,324 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:54,045 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:21:54,047 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:21:54,047 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:21:54,050 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:21:54,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:54,474 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:21:55,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:21:55,283 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:21:55,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:55,476 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:56,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:56,479 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:21:56,594 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:21:57,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:58,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:21:59,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:00,325 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:01,326 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:01,487 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:02,326 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:02,380 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:02,489 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:03,326 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:04,326 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:05,326 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:06,327 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:07,326 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:08,289 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:08,327 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:09,327 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:10,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:22:10,283 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:22:10,327 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:11,327 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:12,327 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:13,328 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:13,649 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:14,328 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:15,328 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:16,328 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:17,328 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:18,329 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:19,290 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:19,329 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:20,329 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:21,329 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:22,066 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:22:22,329 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:23,330 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:24,041 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:22:24,042 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:22:24,043 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:22:24,046 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:22:24,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:24,520 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:22:25,083 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:25,282 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:22:25,283 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:22:25,330 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:25,521 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:26,330 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:26,524 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:27,330 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:28,330 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:29,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:30,290 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:30,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:31,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:31,533 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:32,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:32,539 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:33,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:34,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:35,331 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:36,290 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:36,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:37,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:38,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:39,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:40,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:22:40,283 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:22:40,332 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:41,333 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:41,545 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:42,333 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:43,333 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:44,333 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:45,333 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:46,333 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:47,291 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:47,334 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:48,334 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:49,334 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:50,334 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:51,334 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:52,067 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:22:52,334 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:53,069 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:53,185 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:22:53,186 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:22:53,187 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:22:53,189 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:22:53,335 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:53,569 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:22:54,335 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:54,570 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:55,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:22:55,283 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:22:55,335 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:55,572 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:22:56,335 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:57,335 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:58,143 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:22:58,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:59,336 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:22:59,580 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:00,336 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:00,582 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:01,336 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:02,336 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:03,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:03,336 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:04,336 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:05,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:06,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:07,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:08,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:09,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:09,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:10,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:23:10,284 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:23:10,337 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:11,338 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:12,338 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:13,338 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:14,338 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:14,974 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:15,338 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:16,338 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:17,339 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:18,339 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:19,339 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:20,291 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:20,339 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:21,339 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:22,070 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:23:22,339 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:22,804 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 15:23:22,805 DEBUG   SenderThread:1565 [sender.py:send():379] send: history
+2024-07-29 15:23:22,806 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 15:23:22,809 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:23:23,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:23,613 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:23:24,340 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:24,614 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:25,283 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:23:25,284 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:23:25,340 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:25,606 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:25,616 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:26,340 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:27,340 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:28,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:28,621 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:29,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:29,623 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:30,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:31,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:31,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:32,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:33,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:34,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:35,341 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:36,292 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:36,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:37,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:38,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:39,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:40,284 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 15:23:40,285 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 15:23:40,342 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:41,343 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:41,615 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:41,706 DEBUG   SenderThread:1565 [sender.py:send():379] send: exit
+2024-07-29 15:23:41,706 INFO    SenderThread:1565 [sender.py:send_exit():586] handling exit code: 255
+2024-07-29 15:23:41,706 INFO    SenderThread:1565 [sender.py:send_exit():588] handling runtime: 349
+2024-07-29 15:23:41,707 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:23:41,708 INFO    SenderThread:1565 [sender.py:send_exit():594] send defer
+2024-07-29 15:23:41,708 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,708 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-29 15:23:41,708 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,708 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-29 15:23:41,708 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 1
+2024-07-29 15:23:41,708 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,709 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-29 15:23:41,709 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,709 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-29 15:23:41,709 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 2
+2024-07-29 15:23:41,709 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,709 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-29 15:23:41,709 INFO    HandlerThread:1565 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-29 15:23:41,709 INFO    HandlerThread:1565 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-29 15:23:41,710 DEBUG   SystemMonitor:1565 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-29 15:23:41,710 DEBUG   SystemMonitor:1565 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-29 15:23:41,711 INFO    HandlerThread:1565 [interfaces.py:finish():200] Joined disk monitor
+2024-07-29 15:23:41,719 INFO    HandlerThread:1565 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-29 15:23:41,720 INFO    HandlerThread:1565 [interfaces.py:finish():200] Joined memory monitor
+2024-07-29 15:23:41,720 INFO    HandlerThread:1565 [interfaces.py:finish():200] Joined network monitor
+2024-07-29 15:23:41,720 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,720 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-29 15:23:41,720 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 3
+2024-07-29 15:23:41,720 DEBUG   SenderThread:1565 [sender.py:send():379] send: stats
+2024-07-29 15:23:41,721 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,721 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-29 15:23:41,721 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,721 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-29 15:23:41,721 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 4
+2024-07-29 15:23:41,721 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,721 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-29 15:23:41,722 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,722 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-29 15:23:41,722 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 5
+2024-07-29 15:23:41,722 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,722 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-29 15:23:41,722 DEBUG   SenderThread:1565 [sender.py:send():379] send: summary
+2024-07-29 15:23:41,723 INFO    SenderThread:1565 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 15:23:41,724 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,724 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-29 15:23:41,724 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 6
+2024-07-29 15:23:41,724 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,724 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-29 15:23:41,724 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,724 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-29 15:23:41,724 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 7
+2024-07-29 15:23:41,724 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:41,725 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:41,725 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-29 15:23:41,725 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:41,725 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-29 15:23:42,644 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:23:42,706 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:42,842 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 8
+2024-07-29 15:23:42,842 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: poll_exit
+2024-07-29 15:23:42,842 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:42,843 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-29 15:23:42,843 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:42,843 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-29 15:23:42,843 INFO    SenderThread:1565 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-29 15:23:42,844 INFO    SenderThread:1565 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-29 15:23:42,939 INFO    SenderThread:1565 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-29 15:23:42,946 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 9
+2024-07-29 15:23:42,947 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:42,947 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-29 15:23:42,948 DEBUG   SenderThread:1565 [sender.py:send():379] send: artifact
+2024-07-29 15:23:43,645 INFO    Thread-12 :1565 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:43,707 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:44,284 INFO    SenderThread:1565 [sender.py:send_artifact():1530] sent artifact job-git_github.com_lanmmn_MT-ACT.git_train.py - {'id': 'QXJ0aWZhY3Q6MTAzOTA3NTEyMg==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMzU0NjM2OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTAzOTA3NTEyMg==', 'versionIndex': 1}}}
+2024-07-29 15:23:44,284 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:44,284 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-29 15:23:44,284 INFO    SenderThread:1565 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-29 15:23:44,648 INFO    SenderThread:1565 [dir_watcher.py:finish():388] scan: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files
+2024-07-29 15:23:44,649 INFO    SenderThread:1565 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/config.yaml config.yaml
+2024-07-29 15:23:44,649 INFO    SenderThread:1565 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/conda-environment.yaml conda-environment.yaml
+2024-07-29 15:23:44,655 INFO    SenderThread:1565 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-metadata.json wandb-metadata.json
+2024-07-29 15:23:44,656 INFO    SenderThread:1565 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/requirements.txt requirements.txt
+2024-07-29 15:23:44,660 INFO    SenderThread:1565 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log output.log
+2024-07-29 15:23:44,661 INFO    SenderThread:1565 [dir_watcher.py:finish():402] scan save: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json wandb-summary.json
+2024-07-29 15:23:44,670 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 10
+2024-07-29 15:23:44,670 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: poll_exit
+2024-07-29 15:23:44,671 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:44,675 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-29 15:23:44,675 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:44,675 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-29 15:23:44,676 INFO    SenderThread:1565 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-29 15:23:44,708 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:44,708 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: poll_exit
+2024-07-29 15:23:45,541 INFO    wandb-upload_2:1565 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/requirements.txt
+2024-07-29 15:23:45,709 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:45,710 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: poll_exit
+2024-07-29 15:23:45,782 INFO    wandb-upload_0:1565 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/config.yaml
+2024-07-29 15:23:45,834 INFO    wandb-upload_3:1565 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/output.log
+2024-07-29 15:23:45,895 INFO    wandb-upload_4:1565 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/wandb-summary.json
+2024-07-29 15:23:45,981 INFO    wandb-upload_1:1565 [upload_job.py:push():130] Uploaded file /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/files/conda-environment.yaml
+2024-07-29 15:23:46,182 INFO    Thread-11 :1565 [sender.py:transition_state():614] send defer: 11
+2024-07-29 15:23:46,182 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:46,183 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-29 15:23:46,183 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:46,183 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-29 15:23:46,184 INFO    SenderThread:1565 [file_pusher.py:join():175] waiting for file pusher
+2024-07-29 15:23:46,184 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 12
+2024-07-29 15:23:46,184 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:46,184 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-29 15:23:46,185 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:46,185 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-29 15:23:46,185 INFO    SenderThread:1565 [file_stream.py:finish():601] file stream finish called
+2024-07-29 15:23:46,710 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:47,201 INFO    SenderThread:1565 [file_stream.py:finish():605] file stream finish is done
+2024-07-29 15:23:47,201 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 13
+2024-07-29 15:23:47,202 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: poll_exit
+2024-07-29 15:23:47,202 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:47,202 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-29 15:23:47,202 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 15:23:47,202 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:47,203 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-29 15:23:47,203 INFO    SenderThread:1565 [sender.py:transition_state():614] send defer: 14
+2024-07-29 15:23:47,203 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: defer
+2024-07-29 15:23:47,203 INFO    HandlerThread:1565 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-29 15:23:47,203 DEBUG   SenderThread:1565 [sender.py:send():379] send: final
+2024-07-29 15:23:47,203 DEBUG   SenderThread:1565 [sender.py:send():379] send: footer
+2024-07-29 15:23:47,203 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: defer
+2024-07-29 15:23:47,204 INFO    SenderThread:1565 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-29 15:23:47,204 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:47,205 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: poll_exit
+2024-07-29 15:23:47,205 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: server_info
+2024-07-29 15:23:47,205 DEBUG   SenderThread:1565 [sender.py:send_request():406] send_request: server_info
+2024-07-29 15:23:47,205 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-29 15:23:47,207 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-29 15:23:47,208 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-29 15:23:47,208 DEBUG   HandlerThread:1565 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 15:23:47,630 WARNING StreamThr :1565 [internal.py:is_dead():413] Internal process exiting, parent pid 1463 disappeared
+2024-07-29 15:23:47,630 ERROR   StreamThr :1565 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-07-29 15:23:47,766 INFO    SenderThread:1565 [sender.py:finish():1608] shutting down sender
+2024-07-29 15:23:47,766 INFO    SenderThread:1565 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-29 15:23:47,767 INFO    SenderThread:1565 [file_pusher.py:join():175] waiting for file pusher
+2024-07-29 15:23:48,208 INFO    WriterThread:1565 [datastore.py:close():296] close: /home/lanzihan/workspace/Github/roboagent/wandb/run-20240729_151746-01eajdzv/run-01eajdzv.wandb
+2024-07-29 15:23:48,208 INFO    HandlerThread:1565 [handler.py:finish():882] shutting down handler

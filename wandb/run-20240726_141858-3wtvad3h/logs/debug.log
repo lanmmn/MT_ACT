@@ -1,0 +1,96 @@
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Configure stats pid to 3068
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Loading settings from /home/lanzihan/.config/wandb/settings
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Loading settings from /home/lanzihan/workspace/Github/roboagent/wandb/settings
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/home/lanzihan/workspace/Github/roboagent/train.py', 'program': 'train.py'}
+2024-07-26 14:18:58,643 INFO    MainThread:3068 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-26 14:18:58,644 INFO    MainThread:3068 [wandb_init.py:_log_setup():529] Logging user logs to /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_141858-3wtvad3h/logs/debug.log
+2024-07-26 14:18:58,644 INFO    MainThread:3068 [wandb_init.py:_log_setup():530] Logging internal logs to /home/lanzihan/workspace/Github/roboagent/wandb/run-20240726_141858-3wtvad3h/logs/debug-internal.log
+2024-07-26 14:18:58,644 INFO    MainThread:3068 [wandb_init.py:init():569] calling init triggers
+2024-07-26 14:18:58,644 INFO    MainThread:3068 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {}
+2024-07-26 14:18:58,644 INFO    MainThread:3068 [wandb_init.py:init():619] starting backend
+2024-07-26 14:18:58,644 INFO    MainThread:3068 [wandb_init.py:init():623] setting up manager
+2024-07-26 14:18:58,645 INFO    MainThread:3068 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-26 14:18:58,649 INFO    MainThread:3068 [wandb_init.py:init():631] backend started and connected
+2024-07-26 14:18:58,653 INFO    MainThread:3068 [wandb_init.py:init():720] updated telemetry
+2024-07-26 14:18:58,678 INFO    MainThread:3068 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-26 14:19:57,128 INFO    Thread-1  :3068 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f9e1f9b6cd0>, 'Connection to api.wandb.ai timed out. (connect timeout=20)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f9e1f9b6cd0>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/requests/adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f9e1f9b6cd0>, 'Connection to api.wandb.ai timed out. (connect timeout=20)'))
+2024-07-26 14:19:59,973 WARNING MainThread:3068 [wandb_init.py:init():1185] interrupted
+Traceback (most recent call last):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1181, in init
+    return wi.init()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 756, in init
+    result = run_init_handle.wait(
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/threading.py", line 558, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

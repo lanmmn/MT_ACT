@@ -1,0 +1,363 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+  0%|                                                                                                                                                                                                 | 0/3000 [00:00<?, ?it/s]2024-07-29 15:25:26,681 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   74.29237
+l1: 0.734 kl: 7.356 loss: 74.292
+Train loss: 53.99607
+l1: 0.800 kl: 5.320 loss: 53.996
+  0%|                                                                                                                                                                                       | 1/3000 [00:07<5:57:10,  7.15s/it]2024-07-29 15:25:33,605 - INFO - val dataloader is fetching data, the length is 5.
+Saved plots to /data/ckpt/mtact_bs32_lr2_lrbb1_epi200_cs32
+Epoch 1
+Val loss:   22.34214
+l1: 0.679 kl: 2.166 loss: 22.342
+Train loss: 22.23055
+l1: 0.679 kl: 2.155 loss: 22.231
+Epoch 2
+Val loss:   14.16719
+l1: 0.606 kl: 1.356 loss: 14.167
+
+  0%|                                                                                                                                                                                       | 2/3000 [00:11<4:31:41,  5.44s/it]2024-07-29 15:25:37,784 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 15.59285
+l1: 0.710 kl: 1.488 loss: 15.593
+Epoch 3
+Val loss:   8.27740
+l1: 0.647 kl: 0.763 loss: 8.277
+  0%|▏                                                                                                                                                                                      | 3/3000 [00:15<3:55:00,  4.70s/it]2024-07-29 15:25:41,610 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 11.89019
+l1: 0.635 kl: 1.125 loss: 11.890
+Epoch 4
+Val loss:   5.65362
+l1: 0.601 kl: 0.505 loss: 5.654
+  0%|▏                                                                                                                                                                                      | 4/3000 [00:19<3:37:40,  4.36s/it]2024-07-29 15:25:45,471 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 8.91639
+l1: 0.622 kl: 0.829 loss: 8.916
+Epoch 5
+Val loss:   4.04299
+l1: 0.608 kl: 0.343 loss: 4.043
+  0%|▎                                                                                                                                                                                      | 5/3000 [00:22<3:28:30,  4.18s/it]2024-07-29 15:25:49,303 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 7.70857
+l1: 0.590 kl: 0.712 loss: 7.709
+Epoch 6
+Val loss:   2.81017
+l1: 0.543 kl: 0.227 loss: 2.810
+  0%|▎                                                                                                                                                                                      | 6/3000 [00:26<3:21:52,  4.05s/it]2024-07-29 15:25:53,163 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 6.23275
+l1: 0.583 kl: 0.565 loss: 6.233
+Epoch 7
+Val loss:   2.33174
+l1: 0.449 kl: 0.188 loss: 2.332
+  0%|▍                                                                                                                                                                                      | 7/3000 [00:30<3:19:10,  3.99s/it]2024-07-29 15:25:56,947 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 5.67191
+l1: 0.558 kl: 0.511 loss: 5.672
+Epoch 8
+Val loss:   1.96345
+l1: 0.464 kl: 0.150 loss: 1.963
+  0%|▍                                                                                                                                                                                      | 8/3000 [00:34<3:17:30,  3.96s/it]2024-07-29 15:26:00,858 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 5.08775
+l1: 0.561 kl: 0.453 loss: 5.088
+Epoch 9
+  0%|▌                                                                                                                                                                                      | 9/3000 [00:38<3:16:00,  3.93s/it]
+Val loss:   1.58015
+
+  0%|▌                                                                                                                                                                                      | 9/3000 [00:38<3:16:00,  3.93s/it]2024-07-29 15:26:04,753 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.68368
+l1: 0.562 kl: 0.412 loss: 4.684
+Epoch 10
+  0%|▌                                                                                                                                                                                     | 10/3000 [00:42<3:16:11,  3.94s/it]
+Val loss:   1.32540
+
+  0%|▌                                                                                                                                                                                     | 10/3000 [00:42<3:16:11,  3.94s/it]2024-07-29 15:26:08,729 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.58569
+l1: 0.560 kl: 0.403 loss: 4.586
+Epoch 11
+  0%|▋                                                                                                                                                                                     | 11/3000 [00:54<5:20:40,  6.44s/it]
+Val loss:   1.17712
+
+  0%|▋                                                                                                                                                                                     | 11/3000 [00:54<5:20:40,  6.44s/it]2024-07-29 15:26:25,104 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.20006
+l1: 0.545 kl: 0.365 loss: 4.200
+Epoch 12
+  0%|▋                                                                                                                                                                                    | 12/3000 [01:20<10:22:04, 12.49s/it]
+Val loss:   1.01549
+
+  0%|▋                                                                                                                                                                                    | 12/3000 [01:20<10:22:04, 12.49s/it]2024-07-29 15:26:51,537 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.18862
+l1: 0.476 kl: 0.371 loss: 4.189
+Epoch 13
+  0%|▊                                                                                                                                                                                    | 13/3000 [01:48<14:17:04, 17.22s/it]
+Val loss:   1.02203
+
+  0%|▊                                                                                                                                                                                    | 13/3000 [01:48<14:17:04, 17.22s/it]2024-07-29 15:27:20,533 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.96783
+l1: 0.493 kl: 0.348 loss: 3.968
+Epoch 14
+  0%|▊                                                                                                                                                                                    | 14/3000 [02:18<17:17:27, 20.85s/it]
+Val loss:   1.02687
+
+  0%|▊                                                                                                                                                                                    | 14/3000 [02:18<17:17:27, 20.85s/it]2024-07-29 15:27:49,170 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 4.02076
+l1: 0.498 kl: 0.352 loss: 4.021
+Epoch 15
+  0%|▉                                                                                                                                                                                    | 15/3000 [02:46<19:15:29, 23.23s/it]
+Val loss:   0.78103
+
+  0%|▉                                                                                                                                                                                    | 15/3000 [02:46<19:15:29, 23.23s/it]2024-07-29 15:28:16,437 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.87319
+l1: 0.473 kl: 0.340 loss: 3.873
+Epoch 16
+  1%|▉                                                                                                                                                                                    | 16/3000 [03:13<20:04:37, 24.22s/it]
+Val loss:   0.79264
+
+  1%|▉                                                                                                                                                                                    | 16/3000 [03:13<20:04:37, 24.22s/it]2024-07-29 15:28:42,491 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.65296
+l1: 0.476 kl: 0.318 loss: 3.653
+Epoch 17
+  1%|█                                                                                                                                                                                    | 17/3000 [03:36<19:50:15, 23.94s/it]
+Val loss:   0.76134
+
+  1%|█                                                                                                                                                                                    | 17/3000 [03:36<19:50:15, 23.94s/it]2024-07-29 15:29:06,873 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.61966
+l1: 0.462 kl: 0.316 loss: 3.620
+Epoch 18
+  1%|█                                                                                                                                                                                    | 18/3000 [04:01<20:09:13, 24.33s/it]
+Val loss:   0.79834
+
+  1%|█                                                                                                                                                                                    | 18/3000 [04:01<20:09:13, 24.33s/it]2024-07-29 15:29:32,082 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.68941
+l1: 0.482 kl: 0.321 loss: 3.689
+Epoch 19
+  1%|█▏                                                                                                                                                                                   | 19/3000 [04:26<20:15:34, 24.47s/it]
+Val loss:   0.65926
+
+  1%|█▏                                                                                                                                                                                   | 19/3000 [04:26<20:15:34, 24.47s/it]2024-07-29 15:29:56,015 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.63469
+l1: 0.452 kl: 0.318 loss: 3.635
+Epoch 20
+  1%|█▏                                                                                                                                                                                   | 20/3000 [04:51<20:22:15, 24.61s/it]
+Val loss:   0.68779
+
+  1%|█▏                                                                                                                                                                                   | 20/3000 [04:51<20:22:15, 24.61s/it]2024-07-29 15:30:23,368 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.59284
+l1: 0.410 kl: 0.318 loss: 3.593
+Epoch 21
+  1%|█▎                                                                                                                                                                                   | 21/3000 [05:18<20:59:43, 25.37s/it]
+Val loss:   0.69414
+
+  1%|█▎                                                                                                                                                                                   | 21/3000 [05:18<20:59:43, 25.37s/it]2024-07-29 15:30:47,819 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.46194
+l1: 0.443 kl: 0.302 loss: 3.462
+Epoch 22
+  1%|█▎                                                                                                                                                                                   | 22/3000 [05:44<21:02:39, 25.44s/it]
+Val loss:   0.64454
+
+  1%|█▎                                                                                                                                                                                   | 22/3000 [05:44<21:02:39, 25.44s/it]2024-07-29 15:31:17,600 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.46762
+l1: 0.421 kl: 0.305 loss: 3.468
+Epoch 23
+  1%|█▍                                                                                                                                                                                   | 23/3000 [06:14<22:05:49, 26.72s/it]
+Val loss:   0.57528
+
+  1%|█▍                                                                                                                                                                                   | 23/3000 [06:14<22:05:49, 26.72s/it]2024-07-29 15:31:45,351 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.43333
+l1: 0.430 kl: 0.300 loss: 3.433
+Epoch 24
+  1%|█▍                                                                                                                                                                                   | 24/3000 [06:40<21:56:26, 26.54s/it]
+Val loss:   0.63663
+
+  1%|█▍                                                                                                                                                                                   | 24/3000 [06:40<21:56:26, 26.54s/it]2024-07-29 15:32:11,196 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.43085
+l1: 0.404 kl: 0.303 loss: 3.431
+Epoch 25
+  1%|█▌                                                                                                                                                                                   | 25/3000 [07:03<21:15:43, 25.73s/it]
+Val loss:   0.56436
+
+  1%|█▌                                                                                                                                                                                   | 25/3000 [07:03<21:15:43, 25.73s/it]2024-07-29 15:32:36,012 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.32217
+l1: 0.408 kl: 0.291 loss: 3.322
+Epoch 26
+  1%|█▌                                                                                                                                                                                   | 26/3000 [07:31<21:41:03, 26.25s/it]
+Val loss:   0.54077
+
+  1%|█▌                                                                                                                                                                                   | 26/3000 [07:31<21:41:03, 26.25s/it]2024-07-29 15:33:01,340 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.35687
+l1: 0.390 kl: 0.297 loss: 3.357
+Epoch 27
+  1%|█▋                                                                                                                                                                                   | 27/3000 [07:55<21:09:20, 25.62s/it]
+Val loss:   0.53657
+
+  1%|█▋                                                                                                                                                                                   | 27/3000 [07:55<21:09:20, 25.62s/it]2024-07-29 15:33:27,318 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.24786
+l1: 0.376 kl: 0.287 loss: 3.248
+Epoch 28
+  1%|█▋                                                                                                                                                                                   | 28/3000 [08:21<21:13:33, 25.71s/it]
+Val loss:   0.51385
+
+  1%|█▋                                                                                                                                                                                   | 28/3000 [08:21<21:13:33, 25.71s/it]2024-07-29 15:33:51,903 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.39811
+l1: 0.378 kl: 0.302 loss: 3.398
+Epoch 29
+  1%|█▋                                                                                                                                                                                   | 29/3000 [08:49<21:41:45, 26.29s/it]
+Val loss:   0.51097
+
+  1%|█▋                                                                                                                                                                                   | 29/3000 [08:49<21:41:45, 26.29s/it]2024-07-29 15:34:19,637 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.23789
+l1: 0.357 kl: 0.288 loss: 3.238
+Epoch 30
+  1%|█▊                                                                                                                                                                                   | 30/3000 [09:15<21:35:36, 26.17s/it]
+Val loss:   0.51030
+
+  1%|█▊                                                                                                                                                                                   | 30/3000 [09:15<21:35:36, 26.17s/it]2024-07-29 15:34:44,559 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.20332
+l1: 0.354 kl: 0.285 loss: 3.203
+Epoch 31
+  1%|█▊                                                                                                                                                                                   | 31/3000 [09:39<21:09:15, 25.65s/it]
+Val loss:   0.47009
+
+  1%|█▊                                                                                                                                                                                   | 31/3000 [09:39<21:09:15, 25.65s/it]2024-07-29 15:35:11,072 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.17205
+l1: 0.341 kl: 0.283 loss: 3.172
+Epoch 32
+  1%|█▉                                                                                                                                                                                   | 32/3000 [10:06<21:31:48, 26.11s/it]
+Val loss:   0.42325
+
+  1%|█▉                                                                                                                                                                                   | 32/3000 [10:06<21:31:48, 26.11s/it]2024-07-29 15:35:37,078 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.12649
+l1: 0.367 kl: 0.276 loss: 3.126
+Epoch 33
+  1%|█▉                                                                                                                                                                                   | 33/3000 [10:35<22:09:08, 26.88s/it]
+Val loss:   0.49580
+
+  1%|█▉                                                                                                                                                                                   | 33/3000 [10:35<22:09:08, 26.88s/it]2024-07-29 15:36:06,198 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.07237
+l1: 0.341 kl: 0.273 loss: 3.072
+Epoch 34
+  1%|██                                                                                                                                                                                   | 34/3000 [11:00<21:46:58, 26.44s/it]
+Val loss:   0.42504
+
+  1%|██                                                                                                                                                                                   | 34/3000 [11:00<21:46:58, 26.44s/it]2024-07-29 15:36:30,514 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.02097
+l1: 0.338 kl: 0.268 loss: 3.021
+Epoch 35
+  1%|██                                                                                                                                                                                   | 35/3000 [11:27<21:45:50, 26.43s/it]
+Val loss:   0.44319
+
+  1%|██                                                                                                                                                                                   | 35/3000 [11:27<21:45:50, 26.43s/it]2024-07-29 15:36:57,044 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.88648
+l1: 0.328 kl: 0.256 loss: 2.886
+Epoch 36
+
+  1%|██▏                                                                                                                                                                                  | 36/3000 [11:49<20:39:19, 25.09s/it]2024-07-29 15:37:18,911 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   0.42287
+l1: 0.225 kl: 0.020 loss: 0.423
+Train loss: 3.11515
+l1: 0.317 kl: 0.280 loss: 3.115
+Epoch 37
+  1%|██▏                                                                                                                                                                                  | 37/3000 [12:11<20:05:44, 24.42s/it]
+Val loss:   0.44421
+
+  1%|██▏                                                                                                                                                                                  | 37/3000 [12:11<20:05:44, 24.42s/it]2024-07-29 15:37:41,723 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.01054
+l1: 0.318 kl: 0.269 loss: 3.011
+Epoch 38
+  1%|██▎                                                                                                                                                                                  | 38/3000 [12:35<19:52:03, 24.15s/it]
+Val loss:   0.52006
+
+  1%|██▎                                                                                                                                                                                  | 38/3000 [12:35<19:52:03, 24.15s/it]2024-07-29 15:38:04,621 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.96486
+l1: 0.311 kl: 0.265 loss: 2.965
+Epoch 39
+  1%|██▎                                                                                                                                                                                  | 39/3000 [13:00<19:58:52, 24.29s/it]
+Val loss:   0.47096
+
+  1%|██▎                                                                                                                                                                                  | 39/3000 [13:00<19:58:52, 24.29s/it]2024-07-29 15:38:30,871 - INFO - val dataloader is fetching data, the length is 5.
+  1%|██▍                                                                                                                                                                                  | 40/3000 [13:27<20:41:55, 25.17s/it]
+Train loss: 2.93843
+l1: 0.295 kl: 0.264 loss: 2.938
+Epoch 40
+Val loss:   0.39263
+
+  1%|██▍                                                                                                                                                                                  | 40/3000 [13:27<20:41:55, 25.17s/it]2024-07-29 15:38:57,752 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.87446
+l1: 0.309 kl: 0.257 loss: 2.874
+Epoch 41
+  1%|██▍                                                                                                                                                                                  | 41/3000 [13:52<20:45:03, 25.25s/it]
+Val loss:   0.36788
+
+  1%|██▍                                                                                                                                                                                  | 41/3000 [13:52<20:45:03, 25.25s/it]2024-07-29 15:39:23,922 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.88099
+l1: 0.296 kl: 0.259 loss: 2.881
+Epoch 42
+  1%|██▌                                                                                                                                                                                  | 42/3000 [14:17<20:43:04, 25.21s/it]
+Val loss:   0.43741
+
+  1%|██▌                                                                                                                                                                                  | 42/3000 [14:17<20:43:04, 25.21s/it]2024-07-29 15:39:48,465 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.87862
+l1: 0.311 kl: 0.257 loss: 2.879
+Epoch 43
+
+  1%|██▌                                                                                                                                                                                  | 43/3000 [14:43<20:45:19, 25.27s/it]2024-07-29 15:40:15,182 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   0.31731
+l1: 0.188 kl: 0.013 loss: 0.317
+Train loss: 2.93708
+l1: 0.298 kl: 0.264 loss: 2.937
+Epoch 44
+  1%|██▋                                                                                                                                                                                  | 44/3000 [15:09<20:54:06, 25.46s/it]
+Val loss:   0.41377
+
+  1%|██▋                                                                                                                                                                                  | 44/3000 [15:09<20:54:06, 25.46s/it]2024-07-29 15:40:39,964 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 3.06840
+l1: 0.296 kl: 0.277 loss: 3.068
+Epoch 45
+  2%|██▋                                                                                                                                                                                  | 45/3000 [15:33<20:29:36, 24.97s/it]
+Val loss:   0.38241
+
+  2%|██▋                                                                                                                                                                                  | 45/3000 [15:33<20:29:36, 24.97s/it]2024-07-29 15:41:01,655 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.86286
+l1: 0.291 kl: 0.257 loss: 2.863
+Epoch 46
+  2%|██▊                                                                                                                                                                                  | 46/3000 [15:54<19:42:53, 24.03s/it]
+Val loss:   0.43425
+
+  2%|██▊                                                                                                                                                                                  | 46/3000 [15:54<19:42:53, 24.03s/it]2024-07-29 15:41:24,748 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.85400
+l1: 0.299 kl: 0.256 loss: 2.854
+Epoch 47
+  2%|██▊                                                                                                                                                                                  | 47/3000 [16:18<19:32:33, 23.82s/it]
+Val loss:   0.33348
+
+  2%|██▊                                                                                                                                                                                  | 47/3000 [16:18<19:32:33, 23.82s/it]2024-07-29 15:41:46,598 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.72149
+l1: 0.284 kl: 0.244 loss: 2.721
+Epoch 48
+  2%|██▉                                                                                                                                                                                  | 48/3000 [16:41<19:29:02, 23.76s/it]
+Val loss:   0.39939
+
+  2%|██▉                                                                                                                                                                                  | 48/3000 [16:41<19:29:02, 23.76s/it]2024-07-29 15:42:11,813 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.74108
+l1: 0.283 kl: 0.246 loss: 2.741
+Epoch 49
+  2%|██▉                                                                                                                                                                                  | 49/3000 [17:04<19:15:54, 23.50s/it]
+Val loss:   0.35057
+
+  2%|██▉                                                                                                                                                                                  | 49/3000 [17:04<19:15:54, 23.50s/it]2024-07-29 15:42:34,291 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.77016
+l1: 0.267 kl: 0.250 loss: 2.770
+Epoch 50
+  2%|███                                                                                                                                                                                  | 50/3000 [17:28<19:15:41, 23.51s/it]
+Val loss:   0.34099
+
+  2%|███                                                                                                                                                                                  | 50/3000 [17:28<19:15:41, 23.51s/it]2024-07-29 15:43:01,768 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 2.71713
+l1: 0.291 kl: 0.243 loss: 2.717
+Epoch 51
+
+  2%|███                                                                                                                                                                                  | 51/3000 [17:59<21:06:12, 25.76s/it]2024-07-29 15:43:29,316 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   0.32925
+l1: 0.193 kl: 0.014 loss: 0.329
+Train loss: 2.67636
+l1: 0.308 kl: 0.237 loss: 2.676
+Epoch 52
+  2%|███▏                                                                                                                                                                                 | 52/3000 [18:25<21:15:15, 25.96s/it]
+Val loss:   0.31831
+

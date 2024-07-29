@@ -1,0 +1,28 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+
+  0%|                                                                                                                                                                                                                     | 0/3000 [00:00<?, ?it/s]2024-07-29 11:33:05,510 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   72.64552
+l1: 0.697 kl: 7.195 loss: 72.646
+  0%|                                                                                                                                                                                                                     | 0/3000 [00:19<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 301, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 107, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 218, in train_bc
+    for batch_idx, data in enumerate(train_dataloader):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1329, in _next_data
+    idx, data = self._get_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1285, in _get_data
+    success, data = self._try_get_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1133, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

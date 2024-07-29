@@ -1,0 +1,15 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+  0%|                                                                                                                                                                                                 | 0/2000 [00:00<?, ?it/s]2024-07-26 14:06:40,007 - INFO - val dataloader is fetching data, the length is 5.
+  0%|                                                                                                                                                                                                 | 0/2000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 298, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 104, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 197, in train_bc
+    forward_dict = forward_pass_improved(data, policy)
+  File "train.py", line 165, in forward_pass_improved
+    image_data = image_data.view(batch_size * seq_len, *image_data.shape[2:])
+RuntimeError: shape '[2400, 3, 480, 640]' is invalid for input of size 22118400

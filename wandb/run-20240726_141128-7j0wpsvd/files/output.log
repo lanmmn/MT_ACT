@@ -1,0 +1,45 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+  0%|                                                                                                                                                                                                 | 0/2000 [00:00<?, ?it/s]2024-07-26 14:11:35,868 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   72.79875
+l1: 0.695 kl: 7.210 loss: 72.799
+2024-07-26 14:11:37,081 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 55.61410
+l1: 0.787 kl: 5.483 loss: 55.614
+Saved plots to /home/lanzihan/workspace/Github/roboagent/ckpt
+Epoch 1
+
+  0%|                                                                                                                                                                                       | 1/2000 [00:07<4:04:20,  7.33s/it]2024-07-26 14:11:44,293 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   25.58177
+l1: 0.653 kl: 2.493 loss: 25.582
+2024-07-26 14:11:45,932 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 27.37736
+l1: 0.695 kl: 2.668 loss: 27.377
+Epoch 2
+
+  0%|▏                                                                                                                                                                                      | 2/2000 [00:22<6:46:08, 12.20s/it]2024-07-26 14:11:59,937 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   15.53160
+l1: 0.688 kl: 1.484 loss: 15.532
+2024-07-26 14:12:01,224 - INFO - val dataloader is fetching data, the length is 5.
+  0%|▏                                                                                                                                                                                      | 2/2000 [00:29<8:19:03, 14.99s/it]
+Traceback (most recent call last):
+  File "train.py", line 298, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 104, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 215, in train_bc
+    for batch_idx, data in enumerate(train_dataloader):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1329, in _next_data
+    idx, data = self._get_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1285, in _get_data
+    success, data = self._try_get_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1133, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

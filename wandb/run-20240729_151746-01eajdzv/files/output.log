@@ -1,0 +1,99 @@
+number of parameters: 85.93M
+KL Weight 10
+Epoch 0
+  0%|                                                                                                                                                                                                                     | 0/3000 [00:00<?, ?it/s]
+Val loss:   74.29237
+
+  0%|                                                                                                                                                                                                                     | 0/3000 [00:00<?, ?it/s]2024-07-29 15:18:06,472 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 53.99607
+l1: 0.800 kl: 5.320 loss: 53.996
+Saved plots to /data/ckpt/mtact_bs32_lr2_lrbb1_epi200_cs32
+Epoch 1
+  0%|                                                                                                                                                                                                          | 1/3000 [00:46<38:57:38, 46.77s/it]
+Val loss:   22.34214
+
+  0%|                                                                                                                                                                                                          | 1/3000 [00:46<38:57:38, 46.77s/it]2024-07-29 15:18:51,016 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 22.23055
+l1: 0.679 kl: 2.155 loss: 22.231
+Epoch 2
+
+  0%|▏                                                                                                                                                                                                         | 2/3000 [01:20<32:47:00, 39.37s/it]2024-07-29 15:19:24,289 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   14.16719
+l1: 0.606 kl: 1.356 loss: 14.167
+Train loss: 15.59284
+l1: 0.710 kl: 1.488 loss: 15.593
+Epoch 3
+  0%|▏                                                                                                                                                                                                         | 3/3000 [01:51<29:29:32, 35.43s/it]
+Val loss:   8.27719
+
+  0%|▏                                                                                                                                                                                                         | 3/3000 [01:51<29:29:32, 35.43s/it]2024-07-29 15:19:54,459 - INFO - val dataloader is fetching data, the length is 5.
+Train loss: 11.89018
+l1: 0.635 kl: 1.125 loss: 11.890
+Epoch 4
+
+  0%|▎                                                                                                                                                                                                         | 4/3000 [02:24<28:46:06, 34.57s/it]2024-07-29 15:20:26,317 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   5.65373
+l1: 0.601 kl: 0.505 loss: 5.654
+Train loss: 8.91639
+l1: 0.622 kl: 0.829 loss: 8.916
+Epoch 5
+
+  0%|▎                                                                                                                                                                                                         | 5/3000 [02:55<27:39:39, 33.25s/it]2024-07-29 15:20:58,048 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   4.04276
+l1: 0.608 kl: 0.343 loss: 4.043
+Train loss: 7.70853
+l1: 0.590 kl: 0.712 loss: 7.709
+Epoch 6
+  0%|▍                                                                                                                                                                                                         | 6/3000 [03:27<27:08:10, 32.63s/it]
+Val loss:   2.81051
+
+  0%|▍                                                                                                                                                                                                         | 6/3000 [03:27<27:08:10, 32.63s/it]2024-07-29 15:21:29,380 - INFO - val dataloader is fetching data, the length is 5.
+  0%|▍                                                                                                                                                                                                         | 7/3000 [03:57<26:34:00, 31.95s/it]
+Train loss: 6.23279
+l1: 0.583 kl: 0.565 loss: 6.233
+
+  0%|▍                                                                                                                                                                                                         | 7/3000 [03:57<26:34:00, 31.95s/it]2024-07-29 15:22:00,177 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   2.33139
+l1: 0.449 kl: 0.188 loss: 2.331
+  0%|▌                                                                                                                                                                                                         | 8/3000 [04:27<26:02:22, 31.33s/it]
+Train loss: 5.67197
+l1: 0.558 kl: 0.511 loss: 5.672
+
+  0%|▌                                                                                                                                                                                                         | 8/3000 [04:27<26:02:22, 31.33s/it]2024-07-29 15:22:30,513 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   1.96291
+l1: 0.464 kl: 0.150 loss: 1.963
+Train loss: 5.08782
+l1: 0.561 kl: 0.453 loss: 5.088
+Epoch 9
+
+  0%|▌                                                                                                                                                                                                         | 9/3000 [04:56<25:27:46, 30.65s/it]2024-07-29 15:22:58,141 - INFO - val dataloader is fetching data, the length is 5.
+Val loss:   1.58017
+l1: 0.454 kl: 0.113 loss: 1.580
+Train loss: 4.68377
+l1: 0.562 kl: 0.412 loss: 4.684
+Epoch 10
+  0%|▋                                                                                                                                                                                                        | 10/3000 [05:26<25:11:26, 30.33s/it]
+Val loss:   1.32489
+
+  0%|▋                                                                                                                                                                                                        | 10/3000 [05:26<25:11:26, 30.33s/it]2024-07-29 15:23:27,615 - INFO - val dataloader is fetching data, the length is 5.
+  0%|▋                                                                                                                                                                                                        | 10/3000 [05:45<28:41:42, 34.55s/it]
+Traceback (most recent call last):
+  File "train.py", line 301, in <module>
+    main(vars(parser.parse_args()))
+  File "train.py", line 107, in main
+    best_ckpt_info = train_bc(train_dataloader, val_dataloader, config)
+  File "train.py", line 218, in train_bc
+    for batch_idx, data in enumerate(train_dataloader):
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1329, in _next_data
+    idx, data = self._get_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1285, in _get_data
+    success, data = self._try_get_data()
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1133, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/home/lanzihan/miniconda3/envs/aloha/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
